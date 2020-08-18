@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className="App">
                 <Navbar/>
 
                 <div className="app-container">
