@@ -9,6 +9,7 @@ import {
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import InfoCard from "./components/InfoCard/InfoCard";
 
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
         <Router>
             <div className="App">
                 <Navbar/>
-
+                <InfoCard/>
                 <div className="app-container">
                     <Switch>
                         <Route exact path="/">

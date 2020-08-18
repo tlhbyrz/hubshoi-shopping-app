@@ -1,8 +1,79 @@
 
 .info-card{
+    position: relative;
     width: 100%;
-    height: 300px;
-    background: rgba(77,100,197,0.4);
-    border-radius: 8px;
-    margin: 16px 0;
+    height: 380px;
+    background: #DDDCDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.info-card-showcase{
+    max-width: 480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info-card p{
+    color: #333333;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+}
+
+
+.info-card button{
+    border: 2px solid black;
+    background: transparent;
+    width: 292px;
+    height: 56px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.info-card img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 380px;
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .info-card{
+        align-items: flex-start;
+    }
+    .info-card-showcase{
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+    .info-card p{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .info-card{
+        align-items: center;
+    }
+    .info-card img{
+        display: none;
+    }
+    .info-card-showcase{
+        align-items: center;
+        margin-left: 0;
+    }
+    .info-card p{
+        text-align: center;
+    }
 }
