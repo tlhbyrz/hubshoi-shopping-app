@@ -1,7 +1,5 @@
 import React from "react";
-import {Alert} from "react-bootstrap";
-
-import { motion } from "framer-motion"
+import "./App.css"
 import {
     BrowserRouter as Router,
     Switch,
@@ -12,17 +10,21 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+
 export default function App() {
     return (
         <Router>
             <div>
                 <Navbar/>
 
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                </Switch>
+                <div className="app-container">
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div>
+
 
                 <Footer/>
             </div>

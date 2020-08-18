@@ -14,7 +14,8 @@ function Navbar() {
                     <Link to={"/home"} className={"nav-link"}>About</Link>
                 </div>
                 <div className="right-nav">
-
+                    <Link to={"/home"} className={"nav-link"} >Home</Link>
+                    <Link to={"/home"} className={"nav-link"}>About</Link>
                 </div>
             </div>
         </nav>

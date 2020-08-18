@@ -15,3 +15,10 @@ body{
   height: 100%;
   background: aliceblue;
 }
+
+.app-container{
+  flex: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}

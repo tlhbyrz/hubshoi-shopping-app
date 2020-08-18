@@ -1,11 +1,24 @@
-import {Alert} from "react-bootstrap";
-import React from "react";
-
+import React, {useState} from "react";
+import InfoCard from "../../components/InfoCard/InfoCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 function Home() {
-    return <div className={"container"}>
+    const [cards, setCards] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    </div>
+    return (
+        <div className="homepage">
+            <InfoCard/>
+            <ProductCard/>
+            <p>homepage</p>
+            <p>homepage</p>
+            <p>homepage</p>
+            <p>homepage</p>
+            <p>homepage</p>
+            <p>homepage</p>
+            <p>homepage</p>
+        </div>
+    )
 }
 
 
