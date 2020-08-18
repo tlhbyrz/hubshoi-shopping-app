@@ -74,6 +74,13 @@
         margin-left: 0;
     }
     .info-card p{
+        padding: 0 20px;
         text-align: center;
+        font-size: 33px;
+        line-height: 44px;
+    }
+    .info-card button{
+        width: 252px;
+        height: 44px;
     }
 }
