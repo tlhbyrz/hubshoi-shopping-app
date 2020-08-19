@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "./App.css"
 import {
     BrowserRouter as Router,
@@ -13,6 +13,19 @@ import InfoCard from "./components/InfoCard/InfoCard";
 
 
 export default function App() {
+    const [openCookie, setOPenCookie] = useState(false);
+
+    function handleCookie() {
+        localStorage.setItem("cookieAccept", true);
+        setOPenCookie(!openCookie);
+    }
+
+    useEffect(() =>{
+        if (!localStorage.getItem("cookieAccept")){
+            setOPenCookie(true);
+        }
+    },[]);
+
     return (
         <Router>
             <div className="App">
@@ -25,9 +38,14 @@ export default function App() {
                         </Route>
                     </Switch>
                 </div>
-
-
                 <Footer/>
+
+                <div className={`cookie ${openCookie ? "open-cookie" : null}`}>
+                    <div className="cookie-container">
+                        <p>This website uses cookies to improve your experience. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button onClick={handleCookie}>Accept</button>
+                    </div>
+                </div>
             </div>
         </Router>
     );

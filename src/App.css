@@ -23,6 +23,42 @@ body{
   padding: 0 20px;
 }
 
+.cookie{
+  width: 100%;
+  min-height: 60px;
+  position: fixed;
+  bottom: -150px;
+  left: 0;
+  background: #EBEBEB;
+  transition: 1s all ease-in;
+}
+
+.cookie-container{
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-container p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.cookie-container button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #02374B;
+  color: white;
+}
+
+.open-cookie {
+  bottom: 0;
+}
 
 
 @media only screen and (max-width: 1350px) {

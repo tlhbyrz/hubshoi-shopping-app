@@ -7,8 +7,16 @@
     background: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 100;
     border-bottom: 1px solid #DDDCDA;
+}
+
+.navbar-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -42,4 +50,81 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+.navbar .toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    outline: none;
+    display: none;
+}
+
+.toggler .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #222;
+    margin-bottom: 0.4rem;
+    transition: 0.4s;
+}
+
+/*close icon*/
+.cross .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .line:nth-child(2) {
+    opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -5px);
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-links{
+        width: 320px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        background: #FFCC00;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transition: 0.3s all ease;
+    }
+    .nav-active{
+        right: 0;
+    }
+    .left-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    .right-nav{
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .navbar .toggler{
+        display: block;
+    }
+    .nav-link{
+        border-radius: 6px;
+        width: 100%;
+        margin: 5px 10px;
+        transition: 0.4s all ease-in-out;
+    }
+    .nav-link:hover{
+        background: rgba(255,255,255, 0.3);
+    }
 }
