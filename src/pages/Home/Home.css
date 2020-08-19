@@ -33,4 +33,8 @@
     transition: 0.3s all ease;
 }
 
-
+@media only screen and (max-width: 470px) {
+    .trend-product-container{
+        justify-content: space-between;
+    }
+}

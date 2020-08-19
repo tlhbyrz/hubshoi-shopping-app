@@ -40,21 +40,46 @@
 
 @media only screen and (max-width: 1350px) {
     .trend-product-card{
-        max-width: 241px;
+        max-width: 28%;
         height: 348px;
+        margin: 15px 0;
     }
     .trend-product-img{
         height: 246px;
+    }
+
+    .trend-product-card:nth-child(odd),
+    .trend-product-card:nth-child(even){
+        margin: 15px;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .trend-product-card{
-        max-width: 173px;
+        max-width: 180px;
         height: 280px;
     }
     .trend-product-img{
         height: 170px;
+    }
+    trend-product-card:nth-child(odd),
+    .trend-product-card:nth-child(even){
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .trend-product-card{
+        max-width: 48%;
+        height: 250px;
+        margin: 15px 0;
+    }
+    .trend-product-img{
+        height: 130px;
+    }
+    .trend-product-card:nth-child(odd),
+    .trend-product-card:nth-child(even){
+        margin: 15px 0;
     }
 }
 
