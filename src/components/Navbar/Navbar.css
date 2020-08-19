@@ -119,9 +119,8 @@
         display: block;
     }
     .nav-link{
-        border-radius: 6px;
         width: 100%;
-        margin: 5px 10px;
+        margin: 5px 0;
         transition: 0.4s all ease-in-out;
     }
     .nav-link:hover{
