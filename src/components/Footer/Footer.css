@@ -51,15 +51,15 @@
     color: #5C5C5C;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1240px) {
     .footer-container{
-        max-width: 900px;
+        max-width: 960px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     .footer-container{
-        max-width: 450px;
+        max-width: 540px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -68,5 +68,11 @@
     .footer-container{
         max-width: 450px;
         grid-template-columns: 1fr;
+    }
+    .footer-column p{
+        text-align: center;
+    }
+    .footer-title{
+        margin-bottom: 25px;
     }
 }

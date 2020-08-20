@@ -49,7 +49,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     .trend-product-card{
         max-width: 180px;
         height: 280px;
