@@ -18,9 +18,8 @@ body{
 
 .app-container{
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
 }
 
 .cookie{
@@ -61,15 +60,21 @@ body{
 }
 
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1240px) {
   .app-container{
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .app-container{
-    max-width: 450px;
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container{
+    max-width: 540px;
   }
 }
 
