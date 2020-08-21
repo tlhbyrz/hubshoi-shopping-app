@@ -31,14 +31,6 @@ export default function App() {
         <Router>
             <div className="App">
                 <Navbar/>
-                {/*<InfoCard/>
-                <div className="app-container">
-                    <Switch>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                    </Switch>
-                </div>*/}
 
                 <Switch>
                     <Route exact path="/">
