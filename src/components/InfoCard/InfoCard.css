@@ -41,13 +41,7 @@
 }
 
 .info-card button:hover{
-    border: 2px solid black;
     background: white;
-    width: 292px;
-    height: 56px;
-    border-radius: 4px;
-    font-weight: 500;
-    margin-top: 10px;
 }
 
 
