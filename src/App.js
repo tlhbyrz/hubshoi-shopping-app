@@ -38,6 +38,13 @@ export default function App() {
                         </Route>
                     </Switch>
                 </div>
+
+                <div className="scroll-container" onClick={() => window.scrollTo(0,0)}>
+                    <div className="scroll-to-top">
+                        <i className="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
                 <Footer/>
 
                 <div className={`cookie ${openCookie ? "open-cookie" : null}`}>
