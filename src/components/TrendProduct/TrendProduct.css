@@ -8,12 +8,19 @@
     overflow: hidden;
     margin: 20px 0;
     padding: 0 15px;
+    cursor: pointer;
 }
 
 
 .trend-product-img{
     width: 100%;
     height: 276px;
+    border-radius: 4px;
+    transition: 0.4s all ease;
+}
+
+.trend-product-img:hover{
+    box-shadow: 0 0 12px rgba(0,0,0, 0.4);
 }
 
 .trend-product-card h5, p{

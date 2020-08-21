@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, Fragment} from "react";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import TrendProduct from "../../components/TrendProduct/TrendProduct";
@@ -10,26 +10,33 @@ function Home() {
     const [loading, setLoading] = useState(true);
 
     return (
-        <div className="homepage">
-            {
-                cards.map((card, index) => (
-                    <ProductCard key={index}/>
-                ))
-            }
+        <Fragment>
+            <InfoCard/>
 
-            <section className="sub-title">
-                <p className="sub-title-text">Amazing value on our trending products</p>
-            </section>
+            <div className="app-container">
+                <div className="homepage">
+                    {
+                        cards.map((card, index) => (
+                            <ProductCard key={index}/>
+                        ))
+                    }
 
-            <section className="trend-product-container">
-                {
-                    trendCards.map((card, index) => (
-                        <TrendProduct key={index}/>
-                    ))
-                }
-            </section>
+                    <section className="sub-title">
+                        <p className="sub-title-text">Amazing value on our trending products</p>
+                    </section>
 
-        </div>
+                    <section className="trend-product-container">
+                        {
+                            trendCards.map((card, index) => (
+                                <TrendProduct key={index}/>
+                            ))
+                        }
+                    </section>
+
+                </div>
+            </div>
+
+        </Fragment>
     )
 }
 

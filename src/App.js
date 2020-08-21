@@ -30,14 +30,20 @@ export default function App() {
         <Router>
             <div className="App">
                 <Navbar/>
-                <InfoCard/>
+                {/*<InfoCard/>
                 <div className="app-container">
                     <Switch>
                         <Route exact path="/">
                             <Home />
                         </Route>
                     </Switch>
-                </div>
+                </div>*/}
+
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                </Switch>
 
                 <div className="scroll-container" onClick={() => window.scrollTo(0,0)}>
                     <div className="scroll-to-top">
@@ -45,7 +51,6 @@ export default function App() {
                     </div>
                 </div>
 
-                <Footer/>
 
                 <div className={`cookie ${openCookie ? "open-cookie" : null}`}>
                     <div className="cookie-container">
@@ -53,6 +58,8 @@ export default function App() {
                         <button onClick={handleCookie}>Accept</button>
                     </div>
                 </div>
+
+                <Footer/>
             </div>
         </Router>
     );
