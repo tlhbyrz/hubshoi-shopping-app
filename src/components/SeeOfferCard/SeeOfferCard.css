@@ -30,7 +30,7 @@
 .offer-card-container button{
     border: none;
     background: #02374B;
-    width: 275px;
+    width: 285px;
     height: 50px;
     color: white;
     border-radius: 4px;
@@ -39,8 +39,8 @@
     transition: 0.55s all ease;
     display: flex;
     align-items: center;
-    padding: 0 40px;
     justify-content: space-between;
+    padding: 0 40px;
 }
 
 .offer-card-container button:hover{
