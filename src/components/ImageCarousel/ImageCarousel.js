@@ -22,11 +22,20 @@ function ImageCarousel({counter}) {
     ]);
 
     function decSlideIndex() {
-        setSlideIndex(slideIndex - 1)
+        if (slideIndex !== 0){
+            setSlideIndex(slideIndex - 1)
+        }else{
+            setSlideIndex(slides.length - 1);
+        }
+
     }
 
     function incSlideIndex() {
-        setSlideIndex(slideIndex + 1)
+        if (slideIndex !== slides.length - 1){
+            setSlideIndex(slideIndex + 1)
+        }else{
+            setSlideIndex(0);
+        }
     }
 
     return(
@@ -36,7 +45,7 @@ function ImageCarousel({counter}) {
                     <div className={`image-carousel-container ${slideIndex === index ? "active-slide" : "passive-slide"}`}>
                         <div className="image-carousel-text-container">
                             <h3>{slide.title}</h3>
-                            <p>{slide.desc}</p>
+                            <p className="carousel-desc">{slide.desc}</p>
                             <p>See Offer!</p>
                         </div>
                         <img src={slide.image}/>
