@@ -2,7 +2,6 @@ import React, {useState, Fragment} from "react";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import TrendProduct from "../../components/TrendProduct/TrendProduct";
-import "./Home.css"
 
 function Home() {
     const [cards, setCards] = useState([1,1,1,1,1,1]);

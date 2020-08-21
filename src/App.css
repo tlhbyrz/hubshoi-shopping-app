@@ -92,6 +92,49 @@ body{
 }
 
 
+/*Anasayfa ve maindeki ortak csssler*/
+
+.homepage{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sub-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.sub-title-text{
+  max-width: 375px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.trend-product-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 0.3s all ease;
+}
+
+@media only screen and (max-width: 470px) {
+  .trend-product-container{
+    justify-content: space-between;
+  }
+}
+
+/*Anasayfa ve maindeki ortak csssler*/
+
+
+
 @media only screen and (max-width: 1240px) {
   .app-container{
     max-width: 960px;
