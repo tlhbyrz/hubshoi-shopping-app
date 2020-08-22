@@ -21,6 +21,7 @@
 .breadcrumb-item{
     color: #5C5C5C;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .breadcrumb-item-active{
