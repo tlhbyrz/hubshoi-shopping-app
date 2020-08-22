@@ -45,8 +45,8 @@ export default function App() {
                     </Route>
                 </Switch>
 
-                <div className="scroll-container" onClick={() => window.scrollTo(0,0)}>
-                    <div className="scroll-to-top">
+                <div className="scroll-container" >
+                    <div className="scroll-to-top" onClick={() => window.scrollTo(0,0)}>
                         <i className="fa fa-long-arrow-up fa-2x" aria-hidden="true"></i>
                     </div>
                 </div>
