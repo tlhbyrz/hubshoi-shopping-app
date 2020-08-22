@@ -11,6 +11,7 @@ import Main from "./pages/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import InfoCard from "./components/InfoCard/InfoCard";
+import ProductList from "./pages/ProductList/ProductList";
 
 
 export default function App() {
@@ -38,6 +39,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/home">
                         <Main />
+                    </Route>
+                    <Route exact path="/test">
+                        <ProductList />
                     </Route>
                 </Switch>
 
