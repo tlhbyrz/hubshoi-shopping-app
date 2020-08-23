@@ -23,6 +23,7 @@
 .navbar img{
     width: 200px;
     height: 40px;
+    cursor: pointer;
 }
 
 .nav-links{
