@@ -1,0 +1,38 @@
+
+
+.horizontal-offer-section{
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.horizontal-offer-text {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1E1F1F;
+}
+
+@media only screen and (max-width: 1024px) {
+    .horizontal-offer-section{
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .horizontal-offer-section{
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .horizontal-offer-section{
+        max-width: 100%;
+    }
+    .horizontal-offer-text {
+        padding-right: 40px;
+    }
+}

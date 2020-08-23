@@ -48,7 +48,7 @@ export default function App() {
                     <Route exact path="/category">
                         <CategoryPage />
                     </Route>
-                    <Route exact path="/offerdetail">
+                    <Route exact path="/offers">
                         <OfferDetail />
                     </Route>
                 </Switch>
