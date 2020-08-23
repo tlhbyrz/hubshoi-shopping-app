@@ -1,10 +1,8 @@
 import React,{useState, Fragment} from "react";
 import "./CategoryPage.css"
 import BreadcrumbHeader from "../../components/BreadcrumbHeader/BreadcrumbHeader";
-import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
-import ProductPagination from "../../components/ProductPagination/ProductPagination";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
 
 function CategoryPage() {
@@ -18,7 +16,6 @@ function CategoryPage() {
                     <div className="top-page-title">
                         <p className="top-page-title-text">Ends today</p>
                     </div>
-
                     <HeroBanner/>
                 </div>
             </div>
@@ -33,8 +30,6 @@ function CategoryPage() {
                             <DetailedProductCard key={index}/>
                         ))
                     }
-
-                    {/*<ProductPagination/>*/}
                 </div>
             </div>
 

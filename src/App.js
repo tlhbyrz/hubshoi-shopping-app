@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import InfoCard from "./components/InfoCard/InfoCard";
 import ProductList from "./pages/ProductList/ProductList";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import OfferDetail from "./pages/OfferDetail/OfferDetail";
 
 
 export default function App() {
@@ -46,6 +47,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/category">
                         <CategoryPage />
+                    </Route>
+                    <Route exact path="/offerdetail">
+                        <OfferDetail />
                     </Route>
                 </Switch>
 
