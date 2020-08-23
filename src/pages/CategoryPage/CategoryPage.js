@@ -5,6 +5,7 @@ import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
 import ProductPagination from "../../components/ProductPagination/ProductPagination";
+import HeroBanner from "../../components/HeroBanner/HeroBanner";
 
 function CategoryPage() {
     const [products, setProducts] = useState([1,1,1,1,1,1,1,1,1]);
@@ -17,7 +18,8 @@ function CategoryPage() {
                     <div className="top-page-title">
                         <p className="top-page-title-text">Ends today</p>
                     </div>
-                    <ImageCarousel />
+
+                    <HeroBanner/>
                 </div>
             </div>
 
