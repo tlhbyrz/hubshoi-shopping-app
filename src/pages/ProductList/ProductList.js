@@ -4,8 +4,10 @@ import SeeOfferCard from "../../components/SeeOfferCard/SeeOfferCard";
 import BreadcrumbHeader from "../../components/BreadcrumbHeader/BreadcrumbHeader";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
 
 function ProductList() {
+    const [products, setProducts] = useState([1,1,1,1,1,1,1,1,1]);
     return(
         <Fragment>
             <SeeOfferCard />
@@ -20,6 +22,16 @@ function ProductList() {
 
             <SearchBar/>
 
+
+            <div className="app-container">
+                <div className="homepage">
+                    {
+                        products.map((product, index) => (
+                            <DetailedProductCard key={index}/>
+                        ))
+                    }
+                </div>
+            </div>
 
         </Fragment>
     )
