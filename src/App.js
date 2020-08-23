@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import InfoCard from "./components/InfoCard/InfoCard";
 import ProductList from "./pages/ProductList/ProductList";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
 
 
 export default function App() {
@@ -40,8 +41,11 @@ export default function App() {
                     <Route exact path="/home">
                         <Main />
                     </Route>
-                    <Route exact path="/test">
+                    <Route exact path="/productlist">
                         <ProductList />
+                    </Route>
+                    <Route exact path="/category">
+                        <CategoryPage />
                     </Route>
                 </Switch>
 

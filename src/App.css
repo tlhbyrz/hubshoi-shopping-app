@@ -94,6 +94,19 @@ body{
 
 
 /*Anasayfa ve maindeki ortak csssler*/
+.top-page-title{
+  padding: 35px 15px 0px;
+  margin-bottom: -15px;
+}
+
+.top-page-title-text{
+  color: #333333;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
 
 .homepage{
   width: 100%;

@@ -1,22 +1,22 @@
 import React,{useState, Fragment} from "react";
-import "./ProductList.css"
-import SeeOfferCard from "../../components/SeeOfferCard/SeeOfferCard";
+import "./CategoryPage.css"
 import BreadcrumbHeader from "../../components/BreadcrumbHeader/BreadcrumbHeader";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
 import ProductPagination from "../../components/ProductPagination/ProductPagination";
 
-function ProductList() {
+function CategoryPage() {
     const [products, setProducts] = useState([1,1,1,1,1,1,1,1,1]);
     return(
         <Fragment>
-            <SeeOfferCard />
-
             <BreadcrumbHeader />
 
             <div className="app-container">
                 <div className="homepage">
+                    <div className="top-page-title">
+                        <p className="top-page-title-text">Ends today</p>
+                    </div>
                     <ImageCarousel />
                 </div>
             </div>
@@ -40,4 +40,4 @@ function ProductList() {
     )
 }
 
-export default ProductList;
+export default CategoryPage;
