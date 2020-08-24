@@ -1,11 +1,10 @@
 import React from "react";
 import "./SearchBar.css";
 
-function SearchBar() {
+function SearchBar({topMargin}) {
     return(
-        <div className="searchbar-section ">
+        <div className="searchbar-section" style={{marginTop: topMargin ? topMargin : "24px"}}>
             <div className="searchbar-container">
-
                 <div className="input-group">
                     <input type="text" className="form-control" placeholder="Search products, discount, etc"
                            aria-label="Search products, discount, etc" aria-describedby="button-addon2" />
@@ -45,7 +44,6 @@ function SearchBar() {
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     )
