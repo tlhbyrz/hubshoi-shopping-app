@@ -32,6 +32,30 @@ function OfferDetail() {
                     }
 
                     <SectionHeader title="Available pharmacies (13)" />
+
+                    <div className="offer-pharmacy-search-container">
+                        <div className="input-group">
+                            <div className="input-group-prepend">
+                                <button className="btn" type="button" id="button-addon2">
+                                    <i className="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <input type="text" className="form-control" placeholder="Search products, discount, etc"
+                                   aria-label="Search products, discount, etc" aria-describedby="button-addon2" />
+                        </div>
+
+                        <div className="input-group">
+                            <input type="text" className="form-control" placeholder="Product category"
+                                   aria-label="Product category" aria-describedby="button-addon2" />
+                            <div className="input-group-append">
+                                <button className="btn" type="button" id="button-addon2">
+                                    <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
                     {
                         pharmacies.map((pharmacy, index) => (
                             <HorizontalPharmacy key={index}/>
