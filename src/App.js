@@ -10,10 +10,10 @@ import Home from "./pages/Home/Home";
 import Main from "./pages/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import InfoCard from "./components/InfoCard/InfoCard";
 import ProductList from "./pages/ProductList/ProductList";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import OfferDetail from "./pages/OfferDetail/OfferDetail";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 
 
 export default function App() {
@@ -37,7 +37,7 @@ export default function App() {
 
                 <Switch>
                     <Route exact path="/">
-                        <Main />
+                        <Home />
                     </Route>
                     <Route exact path="/home">
                         <Main />
@@ -50,6 +50,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/offers">
                         <OfferDetail />
+                    </Route>
+                    <Route exact path="/productdetail">
+                        <ProductDetailPage />
                     </Route>
                 </Switch>
 
