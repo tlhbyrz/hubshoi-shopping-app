@@ -93,7 +93,7 @@
     color: #5C5C5C;
 }
 
-.fa{
+.detailed-product-card .fa{
     font-size: 20px;
 }
 
@@ -124,7 +124,7 @@
         font-size: 12px;
         margin: 0 0 12px;
     }
-    .fa{
+    .detailed-product-card .fa{
         font-size: 18px;
     }
 }
