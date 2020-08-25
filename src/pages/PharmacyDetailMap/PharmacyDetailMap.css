@@ -11,10 +11,22 @@
 .pharmacy-map-info-section{
     width: 500px;
     height: 100%;
-    background: red;
 }
 
 .pharmacy-map-location-section{
     flex: 1;
     background: black;
+    min-height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+    .pharmacy-map-section{
+        flex-direction: column;
+    }
+    .pharmacy-map-location-section{
+        margin: 0 30px;
+        border-radius: 4px;
+
+        margin: 0 30px;
+    }
 }

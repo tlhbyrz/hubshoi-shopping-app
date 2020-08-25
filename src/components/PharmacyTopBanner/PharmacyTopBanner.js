@@ -51,7 +51,6 @@ function PharmacyTopBanner() {
                     </div>
 
                     <div className="pharmacy-banner-button">
-                        {/*<i className="fa fa-map-marker" aria-hidden="true"></i>*/}
                         <img src={DirectionIcon} className="pharmacy-banner-direction-icon" />
                         <p className="pharmacy-banner-button-text">Get directions</p>
                     </div>
