@@ -1,0 +1,32 @@
+
+
+
+
+.offer-detail-map-section{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 160px);
+    display: flex;
+}
+
+.offer-detail-map-info-section{
+    width: 500px;
+    height: 100%;
+}
+
+.offer-detail-map-location-section{
+    flex: 1;
+    background: black;
+    min-height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+    .offer-detail-map-section{
+        flex-direction: column;
+    }
+    .offer-detail-map-location-section{
+        margin: 0 30px;
+        border-radius: 4px;
+        margin: 0 30px;
+    }
+}
