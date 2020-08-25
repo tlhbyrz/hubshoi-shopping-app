@@ -16,6 +16,7 @@ import OfferDetail from "./pages/OfferDetail/OfferDetail";
 import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 import PharmacyList from "./pages/PharmacyList/PharmacyList";
 import Pharmacy from "./pages/Pharmacy/Pharmacy";
+import PharmacyDetailMap from "./pages/PharmacyDetailMap/PharmacyDetailMap";
 
 
 export default function App() {
@@ -52,6 +53,9 @@ export default function App() {
                     </Route>
                     <Route exact path="/pharmacylist">
                         <PharmacyList />
+                    </Route>
+                    <Route exact path="/pharmacymap">
+                        <PharmacyDetailMap />
                     </Route>
                     <Route exact path="/category">
                         <CategoryPage />
