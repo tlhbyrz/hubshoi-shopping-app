@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./OfferLeftWithoutImg.css";
 import OfferMapCard from "../OfferMapCard/OfferMapCard";
 
-function OfferLeftWithoutImg(props) {
+function OfferLeftWithoutImg() {
     const [offers, setOffers] = useState([1,1,1,11,1]);
 
     return(
