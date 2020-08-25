@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./PharmacyTopBanner.css"
 import ProductImg from "../../assets/pharmacy.png";
+import DirectionIcon from "../../assets/direction-icon.svg"
 
 function PharmacyTopBanner() {
+    const [showClocks, setShowClocks] = useState(false);
+
     return(
         <div className="pharmacy-banner-card">
             <div className="pharmacy-banner-image-section">
@@ -17,7 +20,27 @@ function PharmacyTopBanner() {
                     <div className="pharmacy-banner-times">
                         <p className="pharmacy-banner-current">Open now<span>.</span></p>
                         <p className="pharmacy-banner-status">Closes 6:30PM</p>
-                        <i className="fa fa-chevron-down" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-down" aria-hidden="true" onClick={() => setShowClocks(!showClocks)}></i>
+
+                        <div className={`pharmacy-banner-clocks ${showClocks ? "show-banner-clocks" : null}`}>
+                            <p className="pharmacy-banner-clock-title">Opening and closing times</p>
+                            <div className="pharmacy-banner-clock-section">
+                                <p className="pharmacy-banner-clock-day">Monday</p>
+                                <p className="pharmacy-banner-clock-time">09AM-18:30PM</p>
+                            </div>
+                            <div className="pharmacy-banner-clock-section">
+                                <p className="pharmacy-banner-clock-day">Monday</p>
+                                <p className="pharmacy-banner-clock-time">09AM-18:30PM</p>
+                            </div>
+                            <div className="pharmacy-banner-clock-section">
+                                <p className="pharmacy-banner-clock-day">Monday</p>
+                                <p className="pharmacy-banner-clock-time">09AM-18:30PM</p>
+                            </div>
+                            <div className="pharmacy-banner-clock-section">
+                                <p className="pharmacy-banner-clock-day">Monday</p>
+                                <p className="pharmacy-banner-clock-time">Closed</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -28,7 +51,8 @@ function PharmacyTopBanner() {
                     </div>
 
                     <div className="pharmacy-banner-button">
-                        <i className="fa fa-map-marker" aria-hidden="true"></i>
+                        {/*<i className="fa fa-map-marker" aria-hidden="true"></i>*/}
+                        <img src={DirectionIcon} className="pharmacy-banner-direction-icon" />
                         <p className="pharmacy-banner-button-text">Get directions</p>
                     </div>
 

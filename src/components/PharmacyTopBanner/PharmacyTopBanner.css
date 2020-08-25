@@ -10,11 +10,11 @@
 }
 
 .pharmacy-banner-image-section{
-    width: 180px;
+    width: 130px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .pharmacy-banner-img{
@@ -58,6 +58,50 @@
 
 .pharmacy-banner-times{
     display: flex;
+    position: relative;
+}
+
+.pharmacy-banner-times .fa{
+    cursor: pointer;
+}
+
+.pharmacy-banner-clocks{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+    transition: 0.3s height ease;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: white;
+    box-shadow: 0 0 2px 3px rgba(0,0,0, 0.1);
+    z-index: 10;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+.show-banner-clocks{
+    visibility: visible;
+}
+
+.pharmacy-banner-clock-title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.pharmacy-banner-clock-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pharmacy-banner-clock-day,
+.pharmacy-banner-clock-time{
+    font-size: 15px;
+    color: #5C5C5C;
 }
 
 .pharmacy-banner-current{
@@ -97,7 +141,8 @@
     background: rgba(2, 55, 75, 0.09);
 }
 
-.pharmacy-banner-button .fa{
+.pharmacy-banner-button .fa,
+.pharmacy-banner-direction-icon{
     margin: 0 3px;
 }
 
@@ -145,7 +190,7 @@
         height: auto;
     }
     .pharmacy-banner-image-section{
-        width: 130px;
+        width: 110px;
     }
     .pharmacy-banner-content{
         flex-direction: column;
