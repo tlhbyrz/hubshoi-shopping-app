@@ -25,7 +25,6 @@ function HorizontalPharmacy() {
                     </button>
                 </div>
             </div>
-
         </div>
     )
 }

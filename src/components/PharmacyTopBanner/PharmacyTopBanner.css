@@ -1,0 +1,159 @@
+
+
+.pharmacy-banner-card{
+    width: 100%;
+    max-width: 1200px;
+    height: 185px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.pharmacy-banner-image-section{
+    width: 180px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pharmacy-banner-img{
+    width: 100px;
+    height: 100px;
+}
+
+.pharmacy-banner-content{
+    flex: 1;
+    display: flex;
+}
+
+.pharmacy-banner-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0px;
+    margin-left: 15px;
+}
+
+.pharmacy-banner-title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #333333;
+}
+
+.pharmacy-banner-text,
+.pharmacy-banner-current,
+.pharmacy-banner-status{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.pharmacy-banner-times{
+    display: flex;
+}
+
+.pharmacy-banner-current{
+    color: #008A2A;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pharmacy-banner-status{
+    margin-right: 10px;
+}
+
+.pharmacy-banner-button-group{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.pharmacy-banner-button{
+    border: none;
+    height: 40px;
+    color: #02374B;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 15px;
+    transition: 0.6s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pharmacy-banner-button:hover{
+    background: rgba(2, 55, 75, 0.09);
+}
+
+.pharmacy-banner-button .fa{
+    margin: 0 3px;
+}
+
+.pharmacy-banner-button-text{
+    margin: 0px 3px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .pharmacy-banner-card{
+        max-width: 720px;
+        height: 185px;
+    }
+    .pharmacy-banner-button-group{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pharmacy-banner-card{
+        max-width: 540px;
+        height: 175px;
+    }
+    .pharmacy-banner-image-section{
+        width: 130px;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    .pharmacy-banner-content{
+        flex-direction: column;
+    }
+    .pharmacy-banner-button-group{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .pharmacy-banner-card{
+        max-width: 100%;
+        height: auto;
+    }
+    .pharmacy-banner-image-section{
+        width: 130px;
+    }
+    .pharmacy-banner-content{
+        flex-direction: column;
+    }
+    .pharmacy-banner-button-group{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+    }
+}
