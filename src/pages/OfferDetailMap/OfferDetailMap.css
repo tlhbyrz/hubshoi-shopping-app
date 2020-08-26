@@ -18,6 +18,16 @@
     flex: 1;
     background: black;
     min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer-detail-map-location-section iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 @media only screen and (max-width: 768px) {
