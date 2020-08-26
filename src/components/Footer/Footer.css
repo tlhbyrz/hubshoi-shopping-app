@@ -25,13 +25,13 @@
 .footer-column p{
     text-align: left;
     font-size: 14px;
-    line-height: 12px;
+    line-height: 16px;
     color: #5C5C5C;
+    margin-bottom: 16px !important;
 }
 
 .footer-title{
     font-weight: bold;
-    margin-bottom: 16px;
 }
 
 .footer-title-opacity{
