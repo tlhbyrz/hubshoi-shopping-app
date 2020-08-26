@@ -31,7 +31,7 @@ function Pharmacy() {
                 <div className="homepage mt-5">
                     {
                         products.map((product, index) => (
-                            <DetailedProductCard key={index}/>
+                            <DetailedProductCard key={index} comingFrom="offer"/>
                         ))
                     }
                 </div>

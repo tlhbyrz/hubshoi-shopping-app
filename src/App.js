@@ -18,10 +18,30 @@ import PharmacyList from "./pages/PharmacyList/PharmacyList";
 import Pharmacy from "./pages/Pharmacy/Pharmacy";
 import PharmacyDetailMap from "./pages/PharmacyDetailMap/PharmacyDetailMap";
 import OfferDetailMap from "./pages/OfferDetailMap/OfferDetailMap";
+import CustomModal from "./components/CustomModal/CustomModal";
 
 
 export default function App() {
     const [openCookie, setOPenCookie] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [level, setLevel] = useState(0);
+
+    function handleModal() {
+        setIsModalOpen(false);
+    }
+
+    function handleModalLevel(which) {
+        if (level === 0){
+            setLevel(level + 1);
+        }else if(level === 1) {
+            if (which === "next"){
+                setIsModalOpen(false);
+                setLevel(level - 1);
+            }else{
+                setLevel(level - 1);
+            }
+        }
+    }
 
     function handleCookie() {
         localStorage.setItem("cookieAccept", true);
@@ -37,7 +57,7 @@ export default function App() {
     return (
         <Router>
             <div className="App">
-                <Navbar/>
+                <Navbar setIsModalOpen={setIsModalOpen}/>
 
                 <Switch>
                     <Route exact path="/">
@@ -64,7 +84,7 @@ export default function App() {
                     <Route exact path="/category">
                         <CategoryPage />
                     </Route>
-                    <Route exact path="/offers">
+                    <Route exact path="/offerdetail">
                         <OfferDetail />
                     </Route>
                     <Route exact path="/productdetail">
@@ -85,6 +105,11 @@ export default function App() {
                         <button onClick={handleCookie}>Accept</button>
                     </div>
                 </div>
+
+
+                {
+                    isModalOpen && <CustomModal handleModal={handleModal} handleModalLevel={handleModalLevel} level={level}/>
+                }
 
                 <Footer/>
             </div>

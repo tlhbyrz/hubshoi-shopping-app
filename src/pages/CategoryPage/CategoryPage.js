@@ -28,7 +28,7 @@ function CategoryPage() {
                 <div className="homepage">
                     {
                         products.map((product, index) => (
-                            <DetailedProductCard key={index}/>
+                            <DetailedProductCard key={index} comingFrom="product"/>
                         ))
                     }
 

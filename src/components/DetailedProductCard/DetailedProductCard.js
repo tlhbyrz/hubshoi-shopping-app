@@ -1,10 +1,21 @@
 import React from "react";
 import "./DetailedProductCard.css"
 import ProductImg from "../../assets/product.png"
+import {useHistory} from "react-router-dom";
 
-function DetailedProductCard() {
+function DetailedProductCard({comingFrom}) {
+    let history = useHistory();
+
+    function handleNav() {
+        if (comingFrom === "product"){
+            history.push("productdetail");
+        }else if(comingFrom === "offer"){
+            history.push("offerdetail");
+        }
+    }
+
     return(
-        <div className="detailed-product-card">
+        <div className="detailed-product-card" onClick={handleNav}>
             <img src={ProductImg}
                  className="detailed-product-img"   />
             <h5>Buy 1 Get 1 Free</h5>

@@ -5,7 +5,7 @@ import Logo from "../../assets/site-logo.png"
 import {useHistory} from "react-router-dom"
 
 
-function Navbar() {
+function Navbar({setIsModalOpen}) {
     let history = useHistory();
     const [openNav, setOpenNav] = useState(false);
 
@@ -19,11 +19,11 @@ function Navbar() {
                 <img src={Logo} onClick={() => history.push("/home")}/>
                 <div className={`nav-links ${openNav ? "nav-active" : null}`}>
                     <div className="left-nav">
-                        <Link to={"/offers"} className={"nav-link"} >Offers</Link>
+                        <Link to={"/offerdetail"} className={"nav-link"} >Offers</Link>
                         <Link to={"/category"} className={"nav-link"}>Pharmacies</Link>
                     </div>
                     <div className="right-nav">
-                        <Link to={"/productlist"} className={"nav-link"} >Select your location / EN <i className="fas fa-globe"></i></Link>
+                        <p className={"nav-link"} onClick={() => setIsModalOpen(true)}>Select your location / EN <i className="fas fa-globe"></i></p>
                     </div>
                 </div>
             </div>

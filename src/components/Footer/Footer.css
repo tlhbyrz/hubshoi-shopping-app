@@ -22,7 +22,7 @@
     padding: 0 15px;
 }
 
-.footer-column > p{
+.footer-column p{
     text-align: left;
     font-size: 14px;
     line-height: 12px;
@@ -31,6 +31,7 @@
 
 .footer-title{
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .footer-title-opacity{

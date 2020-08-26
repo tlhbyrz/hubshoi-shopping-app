@@ -10,8 +10,11 @@
     transition: 0.4s all ease;
 }
 
-.navbar p {
+.navbar-section p {
     font-family: 'Quicksand', sans-serif;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-align: left;
 }
 
 .navbar-container{
@@ -45,7 +48,8 @@
 .nav-link{
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .right-nav{
