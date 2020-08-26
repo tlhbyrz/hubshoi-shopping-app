@@ -14,7 +14,7 @@ function Navbar() {
     }
 
     return(
-        <nav className="navbar">
+        <nav className="navbar-section">
             <div className="navbar-container">
                 <img src={Logo} onClick={() => history.push("/home")}/>
                 <div className={`nav-links ${openNav ? "nav-active" : null}`}>
