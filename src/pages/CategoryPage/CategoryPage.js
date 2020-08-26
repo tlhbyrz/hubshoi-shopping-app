@@ -4,6 +4,7 @@ import BreadcrumbHeader from "../../components/BreadcrumbHeader/BreadcrumbHeader
 import SearchBar from "../../components/SearchBar/SearchBar";
 import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
+import BottomPagination from "../../components/BottomPagination/BottomPagination";
 
 function CategoryPage() {
     const [products, setProducts] = useState([1,1,1,1,1,1,1,1,1]);
@@ -30,9 +31,10 @@ function CategoryPage() {
                             <DetailedProductCard key={index}/>
                         ))
                     }
+
+                    <BottomPagination/>
                 </div>
             </div>
-
         </Fragment>
     )
 }

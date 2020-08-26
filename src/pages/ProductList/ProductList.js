@@ -6,6 +6,7 @@ import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import DetailedProductCard from "../../components/DetailedProductCard/DetailedProductCard";
 import ProductPagination from "../../components/ProductPagination/ProductPagination";
+import BottomPagination from "../../components/BottomPagination/BottomPagination";
 
 function ProductList() {
     const [products, setProducts] = useState([1,1,1,1,1,1,1,1,1]);
@@ -32,7 +33,7 @@ function ProductList() {
                         ))
                     }
 
-                    {/*<ProductPagination/>*/}
+                    <BottomPagination/>
                 </div>
             </div>
 
