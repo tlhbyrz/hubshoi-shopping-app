@@ -7,6 +7,7 @@
     background: white;
     z-index: 150;
     border-bottom: 1px solid #DDDCDA;
+    transition: 0.4s all ease;
 }
 
 .navbar p {
@@ -132,5 +133,15 @@
     }
     .nav-link:hover{
         background: rgba(255,255,255, 0.3);
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    .navbar-container{
+        padding: 0 15px;
+    }
+    .navbar-section .toggler {
+        right: 15px;
     }
 }
