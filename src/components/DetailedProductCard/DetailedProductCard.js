@@ -8,9 +8,9 @@ function DetailedProductCard({comingFrom}) {
 
     function handleNav() {
         if (comingFrom === "product"){
-            history.push("productdetail");
+            history.push("/productdetail");
         }else if(comingFrom === "offer"){
-            history.push("offerdetail");
+            history.push("/offerdetail");
         }
     }
 

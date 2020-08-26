@@ -11,8 +11,8 @@ function BreadcrumbHeader() {
         <div className="breadcrumb-section">
             <div className="breadcrumb-container">
                 {
-                    menus.map(menu => (
-                        <p className="breadcrumb-item breadcrumb-item-active">{menu.name}</p>
+                    menus.map((menu, index) => (
+                        <p key={index} className="breadcrumb-item breadcrumb-item-active">{menu.name}</p>
                     ))
                 }
             </div>

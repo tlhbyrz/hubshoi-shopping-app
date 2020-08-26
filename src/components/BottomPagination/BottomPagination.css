@@ -57,6 +57,10 @@
     transition: 0.3s all ease;
 }
 
+.bottom-pagination-current-pages::-webkit-scrollbar{
+    display: none;
+}
+
 .show-bottom-pagination{
     display: block;
 }

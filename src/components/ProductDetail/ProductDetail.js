@@ -1,8 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
+import {useHistory} from "react-router-dom";
 import "./ProductDetail.css"
 import ProductDetailImg from "../../assets/product-detail.png"
 
-function ProductDetail() {
+function ProductDetail(props) {
+    console.log("props", props);
+    let history = useHistory();
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[]);
+
+    function navMapPage() {
+        history.push("/pharmacymap")
+    }
+
     return(
         <div className="product-detail-section">
             <div className="product-detail-image-section">
@@ -19,7 +31,7 @@ function ProductDetail() {
                         <p>Save €10</p>
                     </div>
                     <p className="product-detail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-                    <button className="product-detail-btn">Available pharmacies (13)</button>
+                    <button className="product-detail-btn" onClick={navMapPage}>Available pharmacies (13)</button>
                 </div>
             </div>
         </div>
