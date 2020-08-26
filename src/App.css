@@ -10,8 +10,12 @@ html {
 
 body{
   line-height: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -111,7 +115,7 @@ body{
   font-size: 36px;
   line-height: 44px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 

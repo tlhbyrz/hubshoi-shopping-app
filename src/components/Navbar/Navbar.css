@@ -12,6 +12,10 @@
     border-bottom: 1px solid #DDDCDA;
 }
 
+.navbar p {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .navbar-container{
     width: 90%;
     margin: 0 auto;
