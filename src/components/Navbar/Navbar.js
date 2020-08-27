@@ -19,8 +19,8 @@ function Navbar({setIsModalOpen}) {
                 <img src={Logo} onClick={() => history.push("/home")}/>
                 <div className={`nav-links ${openNav ? "nav-active" : null}`}>
                     <div className="left-nav">
-                        <Link to={"/offerdetail"} className={"nav-link"} >Offers</Link>
-                        <Link to={"/category"} className={"nav-link"}>Pharmacies</Link>
+                        <Link onClick={toggleNavbar} to={"/offerdetail"} className={"nav-link"} >Offers</Link>
+                        <Link onClick={toggleNavbar} to={"/category"} className={"nav-link"}>Pharmacies</Link>
                     </div>
                     <div className="right-nav">
                         <p className={"nav-link"} onClick={() => setIsModalOpen(true)}>Select your location / EN <i className="fas fa-globe"></i></p>

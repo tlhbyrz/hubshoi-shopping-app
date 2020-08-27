@@ -1,7 +1,6 @@
 import React from "react";
 import "./InfoCard.css"
-import Person from "../../assets/info-right.png"
-
+import Person from "../../assets/info-right.png";
 
 function InfoCard() {
     return(
