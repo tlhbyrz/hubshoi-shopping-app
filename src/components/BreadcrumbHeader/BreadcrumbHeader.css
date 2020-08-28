@@ -19,6 +19,11 @@
     color: #5C5C5C;
     font-size: 14px;
     margin-top: 10px;
+    transition: 0.3s all ease;
+}
+
+.breadcrumb-item:hover{
+    color: black;
 }
 
 .breadcrumb-item-active{

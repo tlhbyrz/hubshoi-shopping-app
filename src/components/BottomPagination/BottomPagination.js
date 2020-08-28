@@ -9,9 +9,9 @@ function BottomPagination() {
             <div className="bottom-pagination-btn">
                 <i className="fa fa-chevron-left" aria-hidden="true"></i>
             </div>
-            <div className="bottom-pagination-current">
+            <div className="bottom-pagination-current" onClick={() => setOpenPages(!openPages)}>
                 <p className="bottom-pagination-page-number">2</p>
-                <i className={`fa fa-chevron-${openPages ? "up" : "down"}`} aria-hidden="true" onClick={() => setOpenPages(!openPages)}></i>
+                <i className={`fa fa-chevron-${openPages ? "up" : "down"}`} aria-hidden="true" ></i>
 
 
                 <div className={`bottom-pagination-current-pages ${openPages ? "show-bottom-pagination" : null}`}>

@@ -63,6 +63,12 @@
     font-size: 14px;
     text-decoration: underline;
     color: #02374B;
+    transition: 0.3s all ease;
+}
+
+.horizontal-product-link:hover{
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .horizontal-product-price-container{

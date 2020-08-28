@@ -216,7 +216,7 @@
 
 @media only screen and (max-width: 580px) {
     .custom-modal{
-        max-height: 600px;
+        max-height: 570px;
     }
     .custom-modal-btn{
         bottom: 10px;

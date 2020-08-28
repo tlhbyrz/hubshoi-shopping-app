@@ -25,10 +25,12 @@
     align-items: center;
 }
 
-
-.navbar img{
+.navbar-container img{
     width: 200px;
     height: 40px;
+}
+
+.navbar-container img:hover{
     cursor: pointer;
 }
 
